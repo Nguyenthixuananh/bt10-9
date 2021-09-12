@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Điểm TB và Điểm tổng</h1>
+<input type="text" id="diemLy">
+<input type="text" id="diemHoa">
+<input type="text" id="diemSinh">
+<br>
+<button onclick="tinhTb()">Tính điểm TB</button>
+<button onclick="tinhTong()">Tính điểm tổng</button>
+<br>
+Điểm TB:<p id="diemtb"></p>
+<br>
+Điểm tổng:<p id="diemtong"></p>
+<script>
+    function tinhTb(){
+        let l =+document.getElementById('diemLy').value ;
+        let h =+document.getElementById('diemHoa').value ;
+        let s =+document.getElementById('diemSinh').value ;
+        let tb = (l + h + s) / 3;
+        document.getElementById('diemtb').innerHTML=tb;
+    }
+    function tinhTong(){
+        let l =+document.getElementById('diemLy').value ;
+        let h =+document.getElementById('diemHoa').value ;
+        let s =+document.getElementById('diemSinh').value ;
+        let tong = l+h+s;
+        document.getElementById('diemtong').innerHTML=tong;
+
+
+    }
+</script>
+
+</body>
+</html>

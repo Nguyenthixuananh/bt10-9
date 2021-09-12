@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<br>
+<button onclick="calculator('+')">Addition(+)</button>
+<button onclick="calculator('-')">Subtraction(-)</button>
+<button onclick="calculator('*')">Multiplication(X)</button>
+<button onclick="calculator('/')">Division(/)</button>
+<p id="rs">Resul:</p>
+<script>
+    function calculator(cal){
+        let st1 =document.getElementById('number1').value
+        let st2 =document.getElementById('number2').value
+        document.getElementById('rs').innerText=eval(st1 + cal +st2)
+
+
+    }
+</script>
+</body>
+</html>
